@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reproductor</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css">
+  </head>
+  <body>
+    <header>
+    <h1> ID playlist: </h1>
+    <input type="text" id="EspacioDeBusqueda" placeholder="Proporciona el ID de la playlist"><!-- poner un cuadro para que el usuario pueda ingresar el id-->
+    <button onclick="busqueda()"><!--poner imagen en el boton para mejorar el diseño-->
+        <img src="Imagenes/search.jpg" alt="Simbolo de busqueda">
+    </button>
+    <div class="logo-conteiner">
+      <img src="Imagenes/logo.png" alt="Logo personal">
+    </div>
+  </header>
+    <main class="container"><!--bootstrap-->
+        <div class="row">
+            <div class="col">
+                <iframe id="iframeID" width=800px height=550px src=""></iframe>
+                <div id="videoInfo">
+                  <h2 id="tituloVideo"></h2>
+              </div>
+            </div>
+      <div id="lista" class="container col">
+        <ol></ol>
+      </div>
+        </div>
+    </main>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://apis.google.com/js/client.js?onload=function"></script>
+    <script src="index.js"></script>
+  </body>
+  <footer>
+    <p>Creado por César Ramírez</p>
+    <div class="social-icons">
+      <a href="https://github.com/RASECRE" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/c%C3%A9sar-ram-097334272/" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="https://discordapp.com/users/Tal#0001" target="_blank"><i class="fab fa-discord"></i></a>
+    </div>
+  </footer>
+</html>
