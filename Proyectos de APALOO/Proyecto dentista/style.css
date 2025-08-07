@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* contenerdor general */
+#container {
+  display: flex;
+  height: 100vh;
+  background: #f6faff;
+}
+
+/* barra de navegacion de la izq */
+#navbar {
+  display: grid;
+  align-content: space-between;
+  padding: 1em 0;
+  background: #111;
+}
+
+/* iconos barra izq */
+.nav-icon {
+  color: #f6faff;
+  height: 2em;
+  padding: 0 1.5em;
+  text-align: center;
+  list-style: none;
+  text-decoration: none;
+}
+
+.nav-icon li {
+  padding: 1em 0;
+}
+
+/* icono activo barra izq */
+.active-icon {
+  background: #74a9f0;
+}
+
+#principal {
+  background: #f6faff;
+  height: 95vh;
+  width: 100%;
+  margin: 3em;
+  border-radius: 2em;
+  text-transform: capitalize;
+}
+
+#patients-list {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 2em;
+  list-style: none;
+  text-align: center;
+}
+
+.patients-info-list {
+  border-top: 1px solid rgba(0, 0, 0, .1);
+  border-left: 1px solid rgba(0, 0, 0, .1);
+  border-right: 1px solid rgba(0, 0, 0, .1);
+}
+
+/* mostrar en forma de tabla los datos de los pacientes */
+#table-title-patient, .patient-info {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+}
+
+#table-title-patient {
+  margin-bottom: 1em;
+  /* dado por la importacion de la fuente es 700 */
+  font-weight: 700;
+}
+
+.patient-info {
+  background: #fff;
+  padding: .6em;
+  border-bottom: 1px solid rgba(0, 0, 0, .1);
+}
+
+.btn-details-patient {
+  border: none;
+  padding: .4em 1em;
+}
